@@ -37,6 +37,9 @@ function getRandomReviews() {
 
 let allModifiedData = '';
 
+// Add the header line for the CSV format
+allModifiedData += 'sku,rating_code,rating_value,title,review,reviewer,email\n';
+
 // Loop through each SKU and replace the placeholder with the SKU for the selected random reviews
 skus.forEach(sku => {
   const randomReviews = getRandomReviews();  // Get random reviews based on the config
