@@ -6,6 +6,22 @@ const config = require('./src/data/config.json');  // Import configuration file
 const inputFilePath = './src/data/input.txt';
 const outputFilePath = './src/data/output.txt';
 
+// Validate config values
+if (config.minReviews < 0) {
+  console.error('minReviews cannot be less than 0.');
+  return;
+}
+
+if (config.maxReviews > skus.length) {
+  console.error('maxReviews cannot be greater than the number of SKUs.');
+  return;
+}
+
+if (config.maxReviews < config.minReviews) {
+  console.error('maxReviews cannot be less than minReviews.');
+  return;
+}
+
 // Read the input.txt file
 const data = readFileSync(inputFilePath);
 if (!data) {

@@ -34,9 +34,14 @@ The main goal of this project is to:
    This query will fetch the SKUs for all configurable products from the Magento database.
 
 3. **Random Review Selection**:  
-   For each SKU, the app randomly selects between 10 and 12 unique reviews from the pool and assigns them to that SKU.
+   For each SKU, the app randomly selects between 10 and 12 unique reviews from the pool and assigns them to that SKU. However, the number of reviews cannot exceed the total number of SKUs available.
 
-4. **Output Data**:  
+4. **Validation**:  
+   - The `minReviews` value cannot be less than 0.
+   - The `maxReviews` value cannot be greater than the number of SKUs available.
+   - The `maxReviews` value cannot be less than `minReviews`.
+
+5. **Output Data**:  
    The modified reviews are written to the `output.txt` file.
 
    The output format follows the structure used in the Magento 2 sample data, specifically in the product reviews. You can find the example CSV format for reviews in Magento's official sample data repository:
@@ -59,7 +64,7 @@ You can configure the app by editing the `src/data/config.json` file. Here you c
 
 - **placeholder**: The placeholder text (default is `ZZZ`) used in `input.txt` to be replaced with SKUs.
 - **minReviews**: The minimum number of reviews assigned to each SKU (default is 10).
-- **maxReviews**: The maximum number of reviews assigned to each SKU (default is 12).
+- **maxReviews**: The maximum number of reviews assigned to each SKU (default is 12). This cannot exceed the total number of SKUs available, and it cannot be smaller than `minReviews`.
 
 ## Files
 
