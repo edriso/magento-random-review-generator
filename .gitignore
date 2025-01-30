@@ -1,0 +1,11 @@
+# Ignore output file
+/src/data/output.txt
+
+# Ignore node_modules
+/node_modules
+
+# Ignore log files
+*.log
+
+# Ignore environment files
+.env

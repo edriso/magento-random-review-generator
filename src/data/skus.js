@@ -1,0 +1,33 @@
+const skus = [
+    "SFCC", "LFWC", "RFRCJ", "WPJ", "LFO", "CJ", "PO", "RFPH", "LFS", "RFCJ", 
+    "BS", "RFOS", "LFCJ", "RFCS", "RH", "OFCH", "LFZS", "RFWJ", "RFWZC", "RFLPJ", 
+    "PS", "RFS", "CB", "SFJ", "RFPS", "LPJ", "SFFCJ", "RFCC", "SFCPT", "LFH", 
+    "SFES", "LT", "KH", "RFPJ", "RFCCS", "RFES", "DS", "RCH", "LFZH", "WC", 
+    "RFTT", "RFDS", "RFO", "SFSS", "SFPCS", "RFFS", "SFCS", "TO", "OFPRS", 
+    "OFPS", "RFLO", "CRFS", "CTS", "MFGS", "RFLS", "SRJ", "SJ", "LJ", "BLJ", 
+    "BJ", "TRJ", "FSJ", "LFCT", "STJ", "XSRJ", "RDJ", "5DSS", "WSJ", "TIJ", 
+    "OPT", "SRT", "THJ", "WOT", "MLJ", "S3SJ", "DSH", "DSS", "DST", "DSJ", 
+    "DZSH", "LIG", "FSS", "DDRS", "LRPJ", "TP", "DCBS", "RG", "SS", "FRT", 
+    "RIPJ", "WRJ", "PFS", "LIJ", "DCT", "3DST", "HT", "WB", "WSB", "ST", 
+    "T", "CT", "L", "ISDS", "CL", "ILT", "B", "F", "LFBJ", "WPG", "RFDJ", 
+    "RFW", "OFPJ", "BCJ", "PLG", "RFPDJ", "FWCC", "LBDJ", "OWC", "DWC", "QBJ", 
+    "RFRS", "JTSF", "RFWPS", "SFFPJ", "LFWPJ", "2SFPT", "RFLPS", "SFMWJ", "MWJ", 
+    "RFCPS", "OFJJ", "SFCJ", "RFTJ", "SFZPS", "CC", "VCJ", "RFRJ", "RFRZJ", 
+    "RFJ", "KJMF", "RFJJ", "SFPCT", "3RFRT", "1RFRT", "RFRT", "5SFT", "TLF", 
+    "3RFJT", "RFT", "3RFPS", "RFJT", "SFJT", "3SFVT", "SFVT", "SFRT", "RFPJT", 
+    "2LFT", "RFVT", "3SFT", "RFET", "RFH", "RFZH", "OFZH", "RFPPS", "LHC", 
+    "OFPH", "OFCS", "RFZS", "OFHS", "OFFT", "2RFS", "SFS", "RFRCT", "SFNCJ", 
+    "SFT", "SFCTT", "RFTLT", "RFCT", "RFST", "RFBJ", "LFLJ", "RFCCJ", "SFST", 
+    "VSC", "PWB", "FCC", "BCC", "4GC", "MDDCS", "CSDDCS", "PBM", "MDG", 
+    "LPTR", "2SCC", "VCC", "CVSC", "JCC", "PCC", "2PCC", "FFCC", "ECC", 
+    "CVCC", "3CC", "RTC", "CCC", "CMSC", "PCCC", "CDDCS", "CSDCS", "CP", 
+    "LDDCS", "MSDCS", "SDCS", "FB", "QB", "PCFS", "LDSDCS", "PSDCS", "WLP", 
+    "FCS", "LSDCS", "VB", "DDCS", "LTR", "TCR", "DG", "HBT", "PFB", "MCB", 
+    "3MCB", "CBM", "CFS", "AWM", "CMC", "2SMC", "CCMC", "MCFS", "JBB", 
+    "MCDCS", "CDCS", "2MC", "2PM", "2CSN", "RLT", "SPM", "CTR", "2LN", 
+    "LCR", "2MBC", "LWR", "1WMCL", "2MLC", "2AMC", "JB", "LRC", "LP", "MHT", 
+    "CTBS", "TBM", "CTHT", "CTBT", "WBT", "2CTGT", "WHT", "SDG", "WLDG", 
+    "RTBM", "SC", "WSC", "2GT", "BT", "2CGT", "TDG", "FSC", "WBM", "CTGT"
+  ];
+  
+  module.exports = skus;
