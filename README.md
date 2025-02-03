@@ -60,7 +60,7 @@ The main goal of this project is to:
 
 ## Configuration
 
-You can configure the app by editing the `src/data/config.json` file. Here you can modify:
+You can configure the app by editing the `config.json` file. Here you can modify:
 
 - **placeholder**: The placeholder text (default is `ZZZ`) used in `input.txt` to be replaced with SKUs.
 - **minReviews**: The minimum number of reviews assigned to each SKU (default is 10).
@@ -68,24 +68,32 @@ You can configure the app by editing the `src/data/config.json` file. Here you c
 
 ## Files
 
+The following files are located in the `src/data` directory:
+
 - **`input.txt`**: Contains the list of review templates with the placeholder (`ZZZ`).
-- **`output.txt`**: Contains the modified reviews with SKUs replacing the placeholder.
+- **`output.txt`**: Contains the modified reviews with SKUs replacing the placeholder (generated after running the script).
 - **`skus.js`**: A list of SKUs that will replace the placeholder in reviews.
 - **`config.json`**: Configuration file for adjusting settings like the placeholder and number of reviews.
 
 ## How to Run
 
-1. Clone or download the project.
-2. Ensure that Node.js is installed on your system.
-3. Install dependencies:
+1. **Clone or Download the Project**.
+
+2. **Install Node.js**:  
+   Ensure Node.js is installed (latest stable version recommended). Check with:
    ```bash
-   npm install
+   node -v
    ```
-4. Run the script:
+   If not installed, download from [Node.js website](https://nodejs.org/).
+
+3. **Run the Script**:  
+   Navigate to the project’s root directory and run:
    ```bash
    node index.js
    ```
-5. The modified reviews will be written to `output.txt`.
+
+4. **Check the Output**:  
+   After the script completes, the modified reviews will be written to `output.txt` in the `src/data` directory.
 
 ## License
 
